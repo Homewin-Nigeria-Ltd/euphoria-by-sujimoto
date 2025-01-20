@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Federo&family=Metrophobic&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Satisfy&display=swap");
+
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import url('https://fonts.cdnfonts.com/css/arty-signature');
+@import url('https://fonts.cdnfonts.com/css/satista');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.something {
+  background: #25282a;
+}
