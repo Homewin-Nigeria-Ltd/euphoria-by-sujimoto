@@ -22,9 +22,6 @@ const FooterSwiper = () => {
     {
       image: footerSwiperImg01,
     },
-    // {
-    //   image: footerSwiperImg01,
-    // },
   ];
 
   return (

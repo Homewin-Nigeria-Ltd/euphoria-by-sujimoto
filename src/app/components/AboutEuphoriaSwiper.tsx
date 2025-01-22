@@ -13,7 +13,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Keyboard, Navigation } from "swiper/modules";
 import prev from "../../../public/icons/custom-left-arrow.svg";
 import next from "../../../public/icons/custom-right-arrow.svg";
-import otherBusinessesGradient from "../../../public/images/other-businesses-gradient.svg";
 
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -53,7 +52,7 @@ const AboutEuphoriaSwiper = () => {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
   return (
-    <section className='w-full h-full relative'>
+    <section className='w-full h-[516px] md:h-[716px] relative'>
       <Swiper
         className='w-full h-full'
         keyboard={{ enabled: true }}
@@ -85,16 +84,13 @@ const AboutEuphoriaSwiper = () => {
                 alt={business.name}
                 className='absolute inset-0 rounded-[10px] h-full'
               />
-              <Image
-                src={otherBusinessesGradient}
-                alt='other businesses gradient'
-                className='absolute inset-0 rounded-[10px]'
-              />
-              <div className='absolute inset-0 w-full h-full flex flex-col space-y-2 justify-end p-10'>
-                <p className='font-sacramento text-white text-[24px] leading-normal'>
+              <div className='absolute inset-0 w-full h-full bg-other-businesses-gradient'></div>
+
+              <div className='absolute bottom-0 w-full flex flex-col space-y-2 justify-end p-5 md:p-10 h-fit'>
+                <p className='font-sacramento text-white text-[14px] md:text-[24px] leading-normal'>
                   {business.location}
                 </p>
-                <p className='font-satista text-white text-[32px] leading-normal'>
+                <p className='font-satista text-white text-[16px] md:text-[32px] leading-normal'>
                   {business.name}
                 </p>
               </div>

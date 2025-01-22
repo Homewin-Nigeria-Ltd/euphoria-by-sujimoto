@@ -12,7 +12,7 @@ import OurMission from "./components/OurMission";
 export default function Home() {
   return (
     <main className='relative w-full min-h-screen overflow-x-hidden'>
-      <Navbar />
+    <Navbar />
       <div className='w-full'>
         <HeaderBg>
           <HeaderContent />

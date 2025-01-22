@@ -16,7 +16,7 @@ import "swiper/css/pagination";
 
 import bottleWater from "../../../public/images/drinks/bottle-water.svg";
 import budweiser from "../../../public/images/drinks/budweiser.svg";
-import redLabel from "../../../public/images/drinks/red-label.jpg";
+import redLabel from "../../../public/images/drinks/red-label.svg";
 
 const OurMenuSwiper = () => {
   const [isBeginning, setIsBeginning] = useState(true);
@@ -64,6 +64,14 @@ const OurMenuSwiper = () => {
         allowTouchMove={true}
         speed={800}
         slidesPerView={2}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {drinksMenu.map((drink, index) => (
           <SwiperSlide key={index}>
@@ -86,7 +94,7 @@ const OurMenuSwiper = () => {
 
       <div className='absolute inset-0 flex justify-between items-center z-10'>
         <button
-          className={`about-euphoria-swiper-button-prev -translate-x-1/2 focus:outline-none ${
+          className={`about-euphoria-swiper-button-prev md:-translate-x-1/2 focus:outline-none ${
             isBeginning
               ? "opacity-0 pointer-events-none"
               : "opacity-1 pointer-events-auto"
@@ -95,7 +103,7 @@ const OurMenuSwiper = () => {
           <Image src={prev} alt='prev' />
         </button>
         <button
-          className={`about-euphoria-swiper-button-next translate-x-1/2 focus:outline-none ${
+          className={`about-euphoria-swiper-button-next md:translate-x-1/2 focus:outline-none ${
             isEnd
               ? "opacity-0 pointer-events-none"
               : "opacity-1 pointer-events-auto"

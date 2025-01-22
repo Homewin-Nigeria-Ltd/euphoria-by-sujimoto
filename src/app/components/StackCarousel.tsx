@@ -30,7 +30,7 @@ const StackCarousel = () => {
     },
   ];
 
-  const DRAG_THRESHOLD = 150; // Pixels to trigger card move to back
+  const DRAG_THRESHOLD = 100; // Pixels to trigger card move to back
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -169,9 +169,9 @@ const StackCarousel = () => {
       aria-label='Image carousel'
       tabIndex={0}
     >
-      <div className='w-full h-full flex flex-col space-y-20 justify-center items-center relative'>
+      <div className='w-full h-full flex flex-col space-y-12 md:space-y-20 justify-center items-center relative'>
         <div
-          className='relative w-[661px] h-[378px]'
+          className='relative w-full md:w-[661px] h-[220px] md:h-[378px]'
           onMouseMove={handleDragMove}
           onMouseUp={handleDragEnd}
           onMouseLeave={handleDragEnd}
@@ -200,7 +200,7 @@ const StackCarousel = () => {
           ))}
         </div>
 
-        <div className='w-full h-full flex justify-between items-center absolute inset-0 px-[10rem]'>
+        <div className='w-full h-[220px] justify-between items-center absolute inset-0 px-[10rem] hidden md:flex'>
           <button
             onClick={handlePrev}
             className={`stack-carousel-prev -translate-x-1/2 focus:outline-none`}
@@ -215,7 +215,7 @@ const StackCarousel = () => {
           </button>
         </div>
 
-        <button className='font-cormorant-unicase font-bold text-white text-[16px] leading-normal text-center uppercase px-10 py-4 bg-custom-gradient z-10'>
+        <button className='font-cormorant-unicase font-bold text-white text-[14px] md:text-[16px] leading-normal text-center uppercase px-10 py-3 md:py-4 bg-custom-gradient z-10'>
           Add your Experience
         </button>
       </div>
