@@ -61,7 +61,7 @@ const HeaderContent = () => {
                       {category}
                     </p>
                     {!(index === categories.length - 1) && (
-                      <Image src={fancyStar} alt='fancy star'/>
+                      <Image src={fancyStar} alt='fancy star' />
                     )}
                   </Fragment>
                 ))}

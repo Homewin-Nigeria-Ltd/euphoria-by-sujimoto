@@ -27,7 +27,7 @@ const BookReservationForm = () => {
                 <input
                   type='text'
                   placeholder='Enter full name'
-                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full'
+                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full rounded-b-none'
                 />
               </div>
               {/* phone number */}
@@ -41,7 +41,7 @@ const BookReservationForm = () => {
                 <input
                   type='text'
                   placeholder='Enter phone number'
-                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full'
+                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full rounded-b-none'
                 />
               </div>
               {/* Table unit */}
@@ -55,7 +55,7 @@ const BookReservationForm = () => {
                 <input
                   type='text'
                   placeholder='Enter number of table'
-                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full'
+                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full rounded-b-none'
                 />
               </div>
               {/* Email Address */}
@@ -69,7 +69,7 @@ const BookReservationForm = () => {
                 <input
                   type='email'
                   placeholder='Enter email address'
-                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full'
+                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full rounded-b-none'
                 />
               </div>
               {/* How did you find us */}
@@ -82,7 +82,7 @@ const BookReservationForm = () => {
                 </label>
                 <select
                   name='howDidYouFindUs'
-                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full'
+                  className='font-metrophobic placeholder:text-[#D9D9D9] text-[14px] md:text-[18px] leading-[24px] placeholder:text-opacity-[0.5] bg-transparent focus:outline-none border-b-[1px] border-[#d9d9d9] border-opacity-[.21] pb-2 w-full rounded-b-none'
                 >
                   <option value='twitter'>Twitter</option>
                   <option value='instagram'>Instagram</option>

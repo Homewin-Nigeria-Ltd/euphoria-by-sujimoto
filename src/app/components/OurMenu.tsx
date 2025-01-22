@@ -54,13 +54,13 @@ const OurMenu = () => {
 
   return (
     <div className='w-full h-full flex justify-center items-center bg-black'>
-      <div className='w-full h-full px-5 py-10 md:px-20 md:py-10 grid grid-cols-1 md:grid-cols-10 gap-5 md:gap-20'>
+      <div className='w-full h-full container mx-auto px-5 py-10 md:px-20 md:py-10 grid grid-cols-12 gap-5 md:gap-20'>
         {/* left side */}
-        <div className='flex flex-col space-y-8 md:space-y-10 items-start col-span-4'>
+        <div className='w-full flex flex-col space-y-8 md:space-y-10 items-start col-span-12 md:col-span-5'>
           <p className='font-cormorant-unicase font-bold text-white text-[22px] md:text-[32px] leading-[28px] uppercase'>
             Our Menu
           </p>
-          <p className='font-bruno-ace-sc text-white text-[12px] md:text-[14px] leading-[24px] md:leading-[28px] tracking-[4.2px] capitalize'>
+          <p className='font-bruno-ace-sc text-white text-[12px] md:text-[14px] leading-[24px] md:leading-[28px] tracking-[4.2px] capitalize '>
             With every bite, you&apos;ll feel like you&apos;re in Italy, thanks
             to our seasoned chef with over 10 years of vast experience. Our
             chefs are bound to create finger-licking good food just for you,
@@ -85,7 +85,7 @@ const OurMenu = () => {
           </button>
         </div>
         {/* right side */}
-        <div className='col-span-6 mt-10'>
+        <div className='col-span-12 md:col-span-7 mt-10 w-full'>
           <div className='flex flex-col space-y-10 md:space-y-20 items-center'>
             <div className='flex items-center border-[.5px] border-[#A85B5B] px-3 py-3 space-x-5 rounded-[4px]'>
               {menu.map((c, index) => (
