@@ -86,9 +86,9 @@ const AboutEuphoriaSwiper = () => {
               <Image
                 src={business.banner}
                 alt={business.name}
-                className='absolute inset-0 rounded-[10px] h-full'
+                className='absolute inset-0 rounded-[10px] h-full w-full'
               />
-              <div className='absolute inset-0 w-full h-full bg-other-businesses-gradient'></div>
+              <div className='absolute inset-0 h-full bg-other-businesses-gradient'></div>
 
               <div className='absolute bottom-0 w-full flex flex-col space-y-2 justify-end p-5 md:p-10 h-fit'>
                 <p className='font-sacramento text-white text-[14px] md:text-[24px] leading-normal'>
