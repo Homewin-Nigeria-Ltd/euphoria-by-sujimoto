@@ -29,7 +29,7 @@ const OurMission = () => {
   ];
 
   return (
-    <div className='w-screen h-auto md:h-[825px] flex justify-center items-center bg-[#25282A] relative'>
+    <div className='w-screen h-full md:h-[825px] flex justify-center items-center bg-[#25282A] relative our-mission-container py-10'>
       <Image
         src={ourMissionTexture}
         alt='our mission texture'
@@ -38,7 +38,7 @@ const OurMission = () => {
       <Image
         src={euphoriaEmblem}
         alt='eurphoria emblem'
-        className='hidden md:block absolute bottom-1 md:bottom-10 right-1 md:right-10 scale-[.5] md:scale-1 translate-x-1/4 md:translate-x-0 translate-y-1/4 lg:translate-y-0'
+        className='hidden md:block absolute bottom-1 md:bottom-10 right-1 md:right-10 scale-[.5] md:scale-[.85] translate-x-1/4 md:translate-x-0 translate-y-1/4 lg:translate-y-0 animate-rotate-infinite'
       />
       <div className='w-full h-full flex flex-col space-y-10 p-5 md:p-20 relative z-10 justify-center items-center'>
         <div className='flex flex-col space-y-3'>

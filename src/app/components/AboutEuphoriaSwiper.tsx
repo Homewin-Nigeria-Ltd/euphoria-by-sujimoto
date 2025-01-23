@@ -10,7 +10,7 @@ import sHotel from "../../../public/images/other-businesses/the-s-hotel.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { EffectFade, Keyboard, Navigation } from "swiper/modules";
+import { Autoplay, EffectFade, Keyboard, Navigation } from "swiper/modules";
 import prev from "../../../public/icons/custom-left-arrow.svg";
 import next from "../../../public/icons/custom-right-arrow.svg";
 
@@ -60,12 +60,16 @@ const AboutEuphoriaSwiper = () => {
           nextEl: ".about-euphoria-swiper-button-next",
           prevEl: ".about-euphoria-swiper-button-prev",
         }}
-        modules={[Keyboard, Navigation, EffectFade]}
+        modules={[Keyboard, Navigation, EffectFade, Autoplay]}
         onSlideChange={({ isBeginning, isEnd }) => {
           setIsBeginning(isBeginning);
           setIsEnd(isEnd);
         }}
         allowTouchMove={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         speed={800}
         slidesPerView={1}
         effect='fade'

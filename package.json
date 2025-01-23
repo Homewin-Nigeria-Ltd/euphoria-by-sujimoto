@@ -10,12 +10,16 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@types/locomotive-scroll": "^4.1.4",
     "gsap": "^3.12.7",
+    "locomotive-scroll": "^4.1.4",
     "next": "15.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "react-icons": "^5.4.0",
+    "react-scroll": "^1.9.0",
+    "react-whatsapp-widget": "^2.2.0",
     "swiper": "^11.2.1"
   },
   "devDependencies": {
@@ -23,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-scroll": "^1.8.10",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "postcss": "^8",

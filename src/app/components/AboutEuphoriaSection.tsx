@@ -12,6 +12,7 @@ import aboutEuphoriaSpiral from "../../../public/images/about-right-floral.svg";
 import africanPropertyAward from "../../../public/images/african-property-awards.svg";
 import sijibomi from "../../../public/images/sijibomi-ogundele.svg";
 import AboutEuphoriaSwiper from "./AboutEuphoriaSwiper";
+import OtherBusinesses from "./OtherBusinesses";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -75,7 +76,7 @@ const AboutEuphoriaSection = () => {
         alt='about bg'
         layout='fill'
         objectFit='cover'
-        className='absolute top-0 right-0 object-cover object-center w-full h-full opacity-[.5]'
+        className='absolute top-0 right-0 object-cover object-top w-full h-full opacity-[.5]'
       />
       <Image
         src={aboutEuphoriaSpiral}
@@ -86,7 +87,7 @@ const AboutEuphoriaSection = () => {
         src={africanPropertyAward}
         ref={awardImageRef}
         alt='africa property award'
-        className='absolute bottom-0 right-10 hidden md:block'
+        className='absolute bottom-0 right-10 hidden md:block z-50'
       />
       <div className='w-full flex flex-col space-y-5 md:space-y-10'>
         <div className='flex flex-col space-y-10 md:space-y-0 md:flex-row justify-between space-x-0 md:space-x-5'>
@@ -97,33 +98,32 @@ const AboutEuphoriaSection = () => {
 
           {/* right side */}
           <div className='flex flex-col space-y-5 items-start w-full md:w-[55%] px-0 md:px-10'>
-            <h2 className='font-raleway font-bold text-[#262626] text-[20px] leading-[22.6px] tracking-[.4px] border-b-[1.8px] border-[#A85B5B] w-full pb-5'>
+            <h2 className='font-bruno-ace font-bold text-[#262626] text-[20px] leading-[22.6px] tracking-[.4px] border-b-[1.8px] border-[#A85B5B] w-full pb-5'>
               About Sujimoto
             </h2>
             <div className='flex flex-col space-x-1 md:space-y-3'>
-              <h3 className='font-raleway font-bold text-black text-[20px] md:text-[40px] leading-[22.5px] md:leading-[44.5px] md:tracking-[.8px]'>
+              <h3 className='font-bruno-ace font-bold text-black text-[20px] md:text-[26px] leading-[44.5px] md:leading-[44.5px] md:tracking-[.8px]'>
                 One destination, endless possibility
               </h3>
-              <p className='font-raleway text-[16px] md:text-[20px] font-semibold tracking-[.4px] text-black'>
+              <p className='font-bruno-ace text-[16px] md:text-[20px] font-semibold tracking-[.4px] text-black'>
                 - a product of sujimoto
               </p>
             </div>
             <div className='flex flex-col space-y-5'>
-              <p className='font-raleway text-black  text-[14px] md:text-[18px] md:text-[14pxpx] leading-normal md:leading-[27.50px] font-medium w-full'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book. It
-                has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, . It was popularised in the
-                1960s with the release of Letraset
+              <p className='font-bruno-ace text-black  text-[14px] md:text-[16px] md:text-[14pxpx] leading-normal md:leading-[27.50px] font-medium w-full'>
+                Sujimoto is Nigeria&apops;s and Africa&apos;s most sophisticated
+                real estate brand and the Rolls Royce of luxury real estate.” We
+                are synonymous with peak luxury and are committed to excellence
+                in hospitality and values. Our dedication to redefining luxury
+                living is reflected in the transformative experiences we create
+                through intricately designed architecture and our search for the
+                world&apos;s most renowned thought leaders in architecture, art,
+                hospitality, and innovation.
               </p>
             </div>
             <div className='flex flex-col space-y-5 items-start'>
               <div className='flex space-x-2 justify-center items-center'>
-                <p className='font-raleway text-[20px] font-bold leading-[18.882px] tracking-[.6px] text-black'>
+                <p className='font-bruno-ace text-[20px] font-bold leading-[18.882px] tracking-[.6px] text-black'>
                   Our Philosophy
                 </p>
                 <span className='w-[46.576px] h-[2.518px] bg-[#A85B5B] block'></span>
@@ -134,10 +134,10 @@ const AboutEuphoriaSection = () => {
                     className='flex flex-col space-y-1 md:space-y-3'
                     key={index}
                   >
-                    <p className='font-raleway uppercase text-[14px] md:text-[16px] font-semibold md:tracking-[.48px] text-black'>
+                    <p className='font-bruno-ace uppercase text-[14px] md:text-[16px] font-semibold md:tracking-[.48px] text-black'>
                       {item.title}
                     </p>
-                    <p className='font-raleway text-[14px] leading-[20px] text-black w-[80%]'>
+                    <p className='font-bruno-ace text-[14px] leading-[20px] text-black w-[80%]'>
                       {item.description}
                     </p>
                   </div>
@@ -145,7 +145,7 @@ const AboutEuphoriaSection = () => {
               </div>
               <div className='mt-5'>
                 <button className='bg-about-euphoria-learn-more-gradient px-8 py-4 flex space-x-2 items-center relative md:mt-10 focus:outline-none'>
-                  <p className='font-raleway font-medium text-white text-[13.362px] leading-normal'>
+                  <p className='font-bruno-ace font-medium text-white text-[13.362px] leading-normal'>
                     Learn More
                   </p>
                   <Image src={arrowRight} alt='arrow right' />
@@ -154,11 +154,15 @@ const AboutEuphoriaSection = () => {
             </div>
           </div>
         </div>
-        <div className='w-full justify-center items-center flex flex-col space-y-5'>
-          <p className='w-full md:w-[65%] font-satista text-black text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] capitalize'>
-            Come for the food, stay for the ambiance, and indulge in a dining
-            experience like no other. At Euphoria, we invite you to taste the
-            difference and savour the moment with every flavourful bite.
+        <div className='w-full h-full z-20'>
+          <OtherBusinesses />
+        </div>
+        <div className='w-full justify-center items-center flex flex-col space-y-5 z-10'>
+          <p className='w-full md:w-[55%] font-satista text-black text-[22px] md:text-[32px] leading-[28px] md:leading-[44px] capitalize'>
+            &ldquo;Come for the food, stay for the ambiance, and indulge in a
+            dining experience like no other. At Euphoria, we invite you to taste
+            the difference and savour the moment with every flavourful
+            bite.&rdquo;
           </p>
           <div className='flex flex-col md:flex-row lg:space-x-5 items-center pb-[8rem] md:pb-[8rem]'>
             <Image src={sijibomi} alt='sijibomi ogundele' />

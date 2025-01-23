@@ -53,8 +53,8 @@ const OurMenu = () => {
   };
 
   return (
-    <div className='w-full h-full flex justify-center items-center bg-black'>
-      <div className='w-full h-full container mx-auto px-5 py-10 md:px-20 md:py-10 grid grid-cols-12 gap-5 md:gap-20'>
+    <div className='w-full h-full md:h-[727px] flex justify-center items-center'>
+      <div className='w-full h-full container mx-auto px-5 py-10 md:px-20 md:py-10 grid grid-cols-12 gap-5 md:gap-20 justify-center items-center'>
         {/* left side */}
         <div className='w-full flex flex-col space-y-8 md:space-y-10 items-start col-span-12 md:col-span-5'>
           <p className='font-cormorant-unicase font-bold text-white text-[22px] md:text-[32px] leading-[28px] uppercase'>

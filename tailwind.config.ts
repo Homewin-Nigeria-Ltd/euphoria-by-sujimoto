@@ -27,7 +27,21 @@ export default {
         foreground: "var(--foreground)",
       },
       animation: {
+        "rotate-infinite": "infiniteRotate 6s linear infinite",
+        "fade-in": "fadeIn 1s ease-in-out",
         bounce: "bounce 2s infinite",
+        pulsate: "pulsate 2s infinite",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        infiniteRotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(359.9deg)" },
+        },
+        
       },
       backgroundImage: {
         "custom-gradient":
@@ -49,6 +63,8 @@ export default {
           "linear-gradient(0deg, #000 7.22%, rgba(244, 244, 244, 0.00) 40.98%)",
         "download-menu-gradient":
           "linear-gradient(180deg, #A85B5B 0.2%, #422424 110.29%)",
+        "view-menu-button-gradient":
+          "linear-gradient(179.77deg, #A85B5B 0.2%, #422424 110.29%)",
       },
     },
   },
