@@ -37,7 +37,7 @@ const LocationSection = () => {
     },
   ];
   return (
-    <div className='w-screen h-auto md:h-[991px] flex justify-center items-center p-5 md:p-20 relative'>
+    <div className='w-full min-h-screen flex justify-center items-center p-5 md:p-20 relative overflow-x-hidden'>
       <div className='flex flex-col space-y-2 md:space-y-5 px-5 md:px-8 py-5 md:py-12 bg-location-top-box-gradient absolute top-0 left-10 z-10 rounded-bl-[10px] border border-white border-opacity-[.40]'>
         <p className='font-bruno-ace text-white text-[14px] md:text-[16px] leading-normal md:tracking-[7.12px] uppercase'>
           location
@@ -49,7 +49,7 @@ const LocationSection = () => {
       <Image
         src={locationServiceBg}
         alt='banner'
-        className='absolute inset-0 w-screen h-auto md:h-[991px] object-cover'
+        className='absolute inset-0 w-screen h-full object-cover'
         priority
       />
       <div className='absolute inset-0 bg-location-section-gradient'></div>

@@ -12,7 +12,7 @@ import layeredImage03 from "../../../public/images/layered-panel/03.svg";
 import layeredImage04 from "../../../public/images/layered-panel/04.svg";
 
 gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger); 
+gsap.registerPlugin(ScrollTrigger);
 
 const LayeredGallery = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -30,10 +30,10 @@ const LayeredGallery = () => {
         ScrollTrigger.create({
           trigger: section,
           start: "top bottom",
-          end: "+=100%",
+          end: "top top",
           pin: sections[i - 1],
           pinSpacing: false,
-          //   markers: true,
+          // markers: true,
         });
       });
 

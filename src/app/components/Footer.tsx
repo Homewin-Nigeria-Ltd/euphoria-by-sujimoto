@@ -50,7 +50,7 @@ const Footer = () => {
       />
       <div className='w-full h-full px-5 md:px-20 py-5 md:py-10 flex flex-col relative z-10 justify-end space-y-5 md:space-y-10'>
         {/* stack gallery */}
-        <div className='md:-mt-20 relative'>
+        <div className='md:-mt-20 relative w-full'>
           <StackCarousel />
         </div>
         {/* logo & food and drinks qr code */}

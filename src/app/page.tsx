@@ -6,14 +6,16 @@ import HeaderBg from "./components/HeaderBg";
 import HeaderContent from "./components/HeaderContent";
 import LayeredGallery from "./components/LayeredGallery";
 import LocationSection from "./components/LocationSection";
+import Navbar from "./components/Navbar";
 import OurMenu from "./components/OurMenu";
 import OurMission from "./components/OurMission";
+import SplashScreen from "./components/SplashScreen";
 
 export default function Home() {
   return (
-    <main className='relative w-full min-h-screen overflow-x-hidden'>
-      {/* <Navbar /> */}
-      <div className='w-full'>
+    <main className='relative w-full overflow-x-hidden'>
+      <SplashScreen>
+        <Navbar />
         <HeaderBg>
           <HeaderContent />
         </HeaderBg>
@@ -25,7 +27,7 @@ export default function Home() {
         <AboutEuphoriaSection />
         <FloatingWhatsapp />
         <Footer />
-      </div>
+      </SplashScreen>
     </main>
   );
 }

@@ -61,7 +61,7 @@ const AboutEuphoriaSection = () => {
 
   return (
     <div
-      className='w-full h-auto relative flex justify-center items-center py-20 bg-white px-5 md:px-20'
+      className='w-screen min-h-screen overflow-x-hidden h-auto relative flex justify-center items-center py-20 bg-white px-5 md:px-20'
       ref={containerRef}
     >
       <Image

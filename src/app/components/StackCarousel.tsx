@@ -200,7 +200,7 @@ const StackCarousel = () => {
           ))}
         </div>
 
-        <div className='w-full h-[220px] justify-between items-center absolute inset-0 px-[25rem] hidden md:flex'>
+        <div className='w-full h-[220px] justify-between items-center absolute inset-0 px-[15rem] hidden md:flex'>
           <button
             onClick={handlePrev}
             className={`stack-carousel-prev -translate-x-1/2 focus:outline-none`}

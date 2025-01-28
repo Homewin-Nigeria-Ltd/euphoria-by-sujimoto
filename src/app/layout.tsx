@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Navbar from "./components/Navbar";
 import "./globals.css";
+import LocomotiveScrollProvider from "./LocomotiveScrollProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +16,8 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <div className='relative flex flex-col'>
-          <Navbar />
-          {children}
+          {/* <Navbar /> */}
+          <LocomotiveScrollProvider>{children}</LocomotiveScrollProvider>
         </div>
       </body>
     </html>

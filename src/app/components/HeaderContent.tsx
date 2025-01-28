@@ -51,10 +51,10 @@ const HeaderContent = () => {
           {/* top section */}
           <div className='flex flex-col space-y-2 justify-center items-center'>
             <div className='flex flex-col justify-center items-center'>
-              <h1 className='font-cormorant-unicase font-bold text-white text-[65px] md:text-[140px] leading-normal uppercase animate-fade-in'>
+              <h1 className='font-cormorant-unicase font-bold text-white text-[65px] md:text-[140px] leading-normal uppercase animate-fade-in' data-scroll data-scroll-speed="2">
                 Euphoria
               </h1>
-              <div className='flex flex-col space-y-5'>
+              <div className='flex flex-col space-y-5' data-scroll data-scroll-speed="1">
                 <div className='flex space-x-2 md:space-x-5 justify-center md:justify-center items-center w-full animate-fade-in'>
                   {categories.map((category, index) => (
                     <Fragment key={index}>
@@ -101,7 +101,7 @@ const HeaderContent = () => {
           </div>
 
           {/* bottom content */}
-          <div className='flex flex-col space-y-10 justify-center items-center cursor-pointer absolute bottom-[6.5rem] md:bottom-[5.5rem]'>
+          <div className='flex flex-col space-y-10 justify-center items-center cursor-pointer absolute bottom-[6.5rem] md:bottom-[2.5rem]'>
             <div className='flex justify-center items-center px-1 py-3 md:py-4 border border-white rounded-[50px] md:rounded-[100px] animate-fade-in'>
               <Link
                 activeClass='active'

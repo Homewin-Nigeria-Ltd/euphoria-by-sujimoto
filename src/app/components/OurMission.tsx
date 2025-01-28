@@ -29,7 +29,7 @@ const OurMission = () => {
   ];
 
   return (
-    <div className='w-screen h-full md:h-[825px] flex justify-center items-center bg-[#25282A] relative our-mission-container py-10'>
+    <div className='w-screen h-full md:h-[825px] flex justify-center items-center bg-[#25282A] relative our-mission-container py-10 overflow-x-hidden'>
       <Image
         src={ourMissionTexture}
         alt='our mission texture'

@@ -30,7 +30,6 @@ export default {
         "rotate-infinite": "infiniteRotate 6s linear infinite",
         "fade-in": "fadeIn 1s ease-in-out",
         bounce: "bounce 2s infinite",
-        pulsate: "pulsate 2s infinite",
       },
       keyframes: {
         fadeIn: {
@@ -41,7 +40,6 @@ export default {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(359.9deg)" },
         },
-        
       },
       backgroundImage: {
         "custom-gradient":

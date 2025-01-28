@@ -78,7 +78,7 @@ const OtherBusinessesSwiper = () => {
       {otherBusinesses.map((business, index) => (
         <SwiperSlide key={index} style={{ zIndex: -1 }}>
           <div
-            className='flex flex-col space-y-2 bg-white rounded-[8px] p-2'
+            className='flex flex-col space-y-2 h-[300px] bg-white rounded-[8px] p-2'
             key={index}
           >
             <div className='w-full h-[230px] bg-[#F9F9F9] flex justify-center items-center rounded-[8px]'>
