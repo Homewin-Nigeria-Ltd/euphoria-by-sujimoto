@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import LocomotiveScroll from "locomotive-scroll";
-import { SmoothScrollContext } from "./ScrollContext";
+// import { SmoothScrollContext } from "./ScrollContext";
+import SmoothScrollContext from "./ScrollContext";
 
 export default function LocomotiveScrollProvider({
   children,

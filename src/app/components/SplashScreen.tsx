@@ -22,10 +22,14 @@ const SplashScreen = ({ children }: SplashScreenProps) => {
     const tl = gsap.timeline();
 
     const calculateScale = () => {
-      const viewportWidth = window.innerWidth;
-      const logoWidth = logoRef.current?.getBoundingClientRect().width || 0;
-      const scale = (viewportWidth * 1.25) / logoWidth;
-      return scale;
+      if (typeof window !== "undefined") {
+        const customWindow = window || undefined;
+        const viewportWidth = customWindow.innerWidth;
+        const logoWidth = logoRef.current?.getBoundingClientRect().width || 0;
+        const scale = (viewportWidth * 1.25) / logoWidth;
+
+        return scale;
+      }
     };
 
     // Initial setup - make sure content is visible but behind splash
@@ -59,7 +63,7 @@ const SplashScreen = ({ children }: SplashScreenProps) => {
           duration: 1,
           ease: "none",
           delay: 0.1,
-        }
+        },
       )
         .fromTo(
           logoRef.current,
@@ -71,7 +75,7 @@ const SplashScreen = ({ children }: SplashScreenProps) => {
             duration: 1,
             ease: "back.out(1.2)",
           },
-          "+=0.5" // Reduced delay
+          "+=0.5", // Reduced delay
         )
         .to(
           logoRef.current,
@@ -79,7 +83,7 @@ const SplashScreen = ({ children }: SplashScreenProps) => {
             scale: "+=2",
             duration: 0.8,
           },
-          "+=0.5" // Reduced delay
+          "+=0.5", // Reduced delay
         )
         .fromTo(
           wrapperRef.current,
@@ -90,7 +94,7 @@ const SplashScreen = ({ children }: SplashScreenProps) => {
             height: "0%",
             duration: 0.8,
           },
-          "<"
+          "<",
         )
         .to(
           illustrationRef.current,
@@ -98,7 +102,7 @@ const SplashScreen = ({ children }: SplashScreenProps) => {
             display: "none",
             duration: 0.8,
           },
-          "<"
+          "<",
         )
         .to(blackBgRef.current, {
           display: "none",
@@ -120,33 +124,33 @@ const SplashScreen = ({ children }: SplashScreenProps) => {
 
   return (
     <div
-      className='relative w-screen overflow-x-hidden bg-black'
+      className="relative w-screen overflow-x-hidden bg-black"
       ref={mainWrapperRef}
     >
       {/* Main content - visible by default */}
-      <div ref={contentRef} className='relative w-screen overflow-x-hidden'>
+      <div ref={contentRef} className="relative w-screen overflow-x-hidden">
         {children}
       </div>
 
       {/* Splash screen */}
       <div
-        className='fixed inset-0 w-screen h-screen flex justify-center items-center bg-black z-50'
+        className="fixed inset-0 w-screen h-screen flex justify-center items-center bg-black z-50"
         ref={blackBgRef}
       >
         <Image
           src={splashScreenIllustration}
-          alt='loader bottom vector'
-          className='absolute inset-0 w-full h-full -z-5 opacity-[13%]'
+          alt="loader bottom vector"
+          className="absolute inset-0 w-full h-full -z-5 opacity-[13%]"
           ref={illustrationRef}
         />
         <div
-          className='w-full h-full flex justify-center items-center bg-[#66333B] overflow-hidden z-30'
+          className="w-full h-full flex justify-center items-center bg-[#66333B] overflow-hidden z-30"
           ref={wrapperRef}
         >
           <Image
             src={logo}
-            alt='logo loader'
-            className='z-10 w-auto h-auto'
+            alt="logo loader"
+            className="z-10 w-auto h-auto"
             ref={logoRef}
           />
         </div>
