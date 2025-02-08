@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LocomotiveScrollProvider from "./LocomotiveScrollProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,11 +12,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body>
-        <div className='relative flex flex-col'>
+        <div className="relative flex flex-col">
           {/* <Navbar /> */}
-          <LocomotiveScrollProvider>{children}</LocomotiveScrollProvider>
+          {children}
         </div>
       </body>
     </html>

@@ -127,10 +127,6 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
       );
 
     gsap.set(menuRef.current, { autoAlpha: 1 });
-
-    return () => {
-      tl.kill();
-    };
   }, [isOpen]);
 
   const handleClose = async (link: string): Promise<void> => {
@@ -143,7 +139,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
     }
   };
 
-  if (!isOpen) return null;
+  // if (!isOpen) return null;
 
   return (
     <div
