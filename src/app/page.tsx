@@ -13,7 +13,7 @@ import SplashScreen from "./components/SplashScreen";
 
 export default function Home() {
   return (
-    <main className='relative w-full overflow-x-hidden'>
+    <main className="relative w-full overflow-x-hidden">
       <SplashScreen>
         <Navbar />
         <HeaderBg>

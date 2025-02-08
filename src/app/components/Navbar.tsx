@@ -7,7 +7,11 @@ import { useState } from "react";
 import mobileMenuIconClosed from "../../../public/icons/mobile-menu-icon-closed.svg";
 import mobileMenuIconOpen from "../../../public/icons/mobile-menu-icon-open.svg";
 import logo from "../../../public/logo.svg";
-import MobileMenu from "./MobileMenu";
+import dynamic from "next/dynamic";
+
+const MobileMenu = dynamic(() => import("./MobileMenu"), {
+  ssr: false,
+});
 
 const Navbar = () => {
   const links = [
@@ -30,13 +34,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full z-50 flex justify-center bg-transparent absolute top-0 left-0'>
+    <div className="w-full z-50 flex justify-center bg-transparent absolute top-0 left-0">
       <div
-        className='w-full md:w-[90%] md:grid grid-cols-2 md:grid-cols-3 border-b-[.5px] border-white pt-5 md:pt-10 pb-5 px-5 relative items-center flex justify-between'
+        className="w-full md:w-[90%] md:grid grid-cols-2 md:grid-cols-3 border-b-[.5px] border-white pt-5 md:pt-10 pb-5 px-5 relative items-center flex justify-between"
         style={{ zIndex: 20 }}
       >
         {/* links */}
-        <div className='hidden md:flex space-x-10 items-center'>
+        <div className="hidden md:flex space-x-10 items-center">
           {links.map((link, index) => (
             <Link
               href={link.url}
@@ -49,12 +53,12 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Link href='/' className='flex justify-center items-center'>
-          <Image src={logo} alt='logo' className="animate-fade-in" />
+        <Link href="/" className="flex justify-center items-center">
+          <Image src={logo} alt="logo" className="animate-fade-in" />
         </Link>
         <Link
-          href='/gallery'
-          className='hidden md:flex justify-end items-center font-cormorant-unicase text-white text-[16px] leading-normal capitalize text-center pointer-events-none'
+          href="/gallery"
+          className="hidden md:flex justify-end items-center font-cormorant-unicase text-white text-[16px] leading-normal capitalize text-center pointer-events-none"
         >
           Gallery
         </Link>
@@ -68,14 +72,14 @@ const Navbar = () => {
           {!mobileMenuOpen ? (
             <Image
               src={mobileMenuIconClosed}
-              alt='mobile menu icon closed'
-              className='md:hidden'
+              alt="mobile menu icon closed"
+              className="md:hidden"
             />
           ) : (
             <Image
               src={mobileMenuIconOpen}
-              alt='mobile menu icon open'
-              className='md:hidden'
+              alt="mobile menu icon open"
+              className="md:hidden"
             />
           )}
         </div>

@@ -18,7 +18,8 @@ const CustomSwiperControls = ({
 }: CustomSwiperControlsProps) => {
   return (
     <div className='w-full h-full absolute inset-0 hidden md:block'>
-      <div className='flex flex-col space-y-3 h-full justify-center'>
+      <div className='flex flex-col space-y-3 h-full justify-center'
+      />
         {Array.from({ length: totalSlides }, (_, index) => (
           <div className='flex space-x-5 items-center' key={index}>
             <Image
