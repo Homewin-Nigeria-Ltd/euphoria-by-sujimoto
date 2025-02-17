@@ -6,7 +6,7 @@ import foodQrCode from "../../../public/images/food-qr-code.svg";
 import footerBg from "../../../public/images/footer-grainy-bg.webp";
 import logo from "../../../public/images/footer-logo.svg";
 import sujimotoLogo from "../../../public/images/sujimoto-logo.svg";
-// import StackCarousel from "./StackCarousel";
+import StackCarousel from "./StackCarousel";
 
 import facebook from "../../../public/images/socials/facebook.svg";
 import tiktok from "../../../public/images/socials/tiktok.svg";
@@ -42,7 +42,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="w-screen h-auto justify-center items-center bg-black bg-opacity-[60%] relative">
+    <div className="w-screen h-full justify-center items-center bg-black bg-opacity-[60%] relative">
       <Image
         src={footerBg}
         alt="footer bg"
@@ -50,8 +50,8 @@ const Footer = () => {
       />
       <div className="w-full h-full px-5 md:px-20 py-5 md:py-10 flex flex-col relative z-10 justify-end space-y-5 md:space-y-10">
         {/* stack gallery */}
-        <div className="md:-mt-20 relative w-full">
-          {/* <StackCarousel /> */}
+        <div className="-mt-20 md:-mt-20 relative w-full">
+          <StackCarousel />
         </div>
         {/* logo & food and drinks qr code */}
         <div className="flex flex-col lg:flex-row justify-between items-center">

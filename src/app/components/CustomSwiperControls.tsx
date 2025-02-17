@@ -50,7 +50,6 @@ const CustomSwiperControls = ({
           </div>
         ))}
       </div>
-    </div>
   );
 };
 
