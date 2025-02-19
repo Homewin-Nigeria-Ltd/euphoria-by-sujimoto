@@ -22,17 +22,17 @@ const AboutEuphoriaSection = () => {
     {
       title: "Diligence",
       description:
-        "Lorem Ipsum is simply dum my text of the printing and typesetting industry.",
+        "Going the extra mile to achieve extraordinary results is one of our guiding principles.",
     },
     {
       title: "Integrity",
       description:
-        "Lorem Ipsum is simply dum my text of the printing and typesetting industry.",
+        "With every new project, we strive to be more inventive than the last, through the use of latest technology, processes and a future forward thinking approach.",
     },
     {
       title: "Excellence",
       description:
-        "Lorem Ipsum is simply dum my text of the printing and typesetting industry.",
+        "Exceeding expectations is what Sujimoto stands for. We set new standards and beat all records for the satisfaction of our clients.",
     },
   ];
 
@@ -137,7 +137,7 @@ const AboutEuphoriaSection = () => {
                     <p className="font-bruno-ace uppercase text-[14px] md:text-[16px] font-semibold md:tracking-[.48px] text-black">
                       {item.title}
                     </p>
-                    <p className="font-bruno-ace text-[14px] leading-[20px] text-black w-[80%]">
+                    <p className="font-bruno-ace text-[14px] leading-[20px] text-black w-full">
                       {item.description}
                     </p>
                   </div>
