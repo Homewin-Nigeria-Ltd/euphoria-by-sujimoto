@@ -11,6 +11,9 @@ const ImageCarousel = () => {
     "/images/food/02.svg",
     "/images/food/03.svg",
     "/images/food/04.svg",
+    "/images/food/05.svg",
+    "/images/food/06.svg",
+    "/images/food/07.svg",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -19,7 +22,7 @@ const ImageCarousel = () => {
       setCurrentIndex((prevIndex) => {
         return prevIndex === images.length - 1 ? 0 : prevIndex + 1;
       });
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(interval);
   }, []);

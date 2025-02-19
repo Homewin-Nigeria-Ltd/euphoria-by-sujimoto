@@ -52,21 +52,21 @@ const OurMission = () => {
           </p>
         </div>
         <div className="w-full flex flex-col md:flex-row">
-          <div className="w-full flex flex-col space-y-3 md:space-y-0 md:flex-row md:w-1/2">
+          <div className="w-full flex flex-col space-y-3 md:space-y-0 md:flex-row">
             <p className="font-cormorant-unicase text-[20px] md:text-[32px] md:leading-[40px] font-bold uppercase text-white tracking-[14.4px] w-full">
               Why Eupho
               <span className="text-white text-opacity-40">ria?</span>
             </p>
-            <div className="w-full relative  md:-ml-[25rem] -z-[10]">
+            <div className="w-full relative  md:-ml-[32rem] -z-[10]">
               <ImageCarousel />
             </div>
           </div>
-          <div className="flex flex-col space-y-5 md:space-y-10 w-full md:w-1/2">
+          <div className="flex flex-col space-y-5 md:space-y-10 w-full md:-ml-[12rem]">
             <div className="bg-white h-[1px] w-auto md:w-[460.53px] mt-5 md:mt-0"></div>
             <div className="flex flex-col space-y-5">
               {whyEuphoria.map((why, index) => (
                 <div className="flex space-x-2 items-center" key={index}>
-                  <p className="font-bruno-ace-sc text-white text-opacity-[.5] text-[12px] md:leading-[14px] uppercase">
+                  <p className="font-bruno-ace-sc text-white text-opacity-[.5] text-[12px] md:text-[14px] md:leading-[14px] uppercase">
                     {why.index}
                   </p>
                   <p className="font-bruno-ace-sc text-white text-[12px] md:text-[22px] md:leading-[22px] uppercase">
