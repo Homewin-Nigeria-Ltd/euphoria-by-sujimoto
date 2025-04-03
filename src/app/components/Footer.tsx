@@ -85,7 +85,7 @@ const Footer = () => {
           <div className="flex space-x-2 items-center justify-center">
             <Image src={phoneIcon} alt="phone icon" />
             <p className="font-bruno-ace text-white text-[16px] leading-[19.3px] uppercase text-center">
-              Contact 08175927055 for Reservations
+              Contact 08039999987 for Reservations
             </p>
           </div>
         </div>
