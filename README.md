@@ -7,17 +7,6 @@
 
 This repository contains the source code for the official website of Euphoria by Sujimoto, a premier luxury real estate project. Built with modern web technologies, it offers a seamless, performant, and visually rich user experience.
 
-## Table of Contents
-
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-- [Environment Variables](#-environment-variables)
-- [Build & Deployment](#-build--deployment)
-- [Linting & Formatting](#-linting--formatting)
-- [Contributing](#-contributing)
-- [License](#-license)
-
 ## Features
 
 *   **Interactive 3D Tours:** Explore properties with immersive virtual tours.
