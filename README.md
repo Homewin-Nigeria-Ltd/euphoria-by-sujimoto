@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Euphoria by Sujimoto
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/your-repo/ci.yml?branch=main&style=flat-square)](https://github.com/your-username/your-repo/actions)
+[![License](https://img.shields.io/github/license/your-username/your-repo?style=flat-square)](./LICENSE)
+
+> A stunning web experience for the "Euphoria" project by Sujimoto.
+
+This repository contains the source code for the official website of Euphoria by Sujimoto, a premier luxury real estate project. Built with modern web technologies, it offers a seamless, performant, and visually rich user experience.
+
+## Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
+- [Build & Deployment](#-build--deployment)
+- [Linting & Formatting](#-linting--formatting)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+## Features
+
+*   **Interactive 3D Tours:** Explore properties with immersive virtual tours.
+*   **Responsive Design:** Flawless experience across all devices, from mobile to desktop.
+*   **High-Performance:** Built with Next.js for fast page loads and a smooth user experience.
+*   **Dynamic Content:** Easily manageable content for property listings, news, and updates.
+*   **SEO Optimized:** Structured for high visibility on search engines.
+
+*(Add or remove features specific to your project)*
+
+## Tech Stack
+
+This project is built with a modern, robust, and scalable tech stack:
+
+*   **Framework:** [Next.js](https://nextjs.org/)
+*   **Styling:** [PostCSS](https://postcss.org/) with [PostCSS Preset Env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
+*   **Linting:** [ESLint](https://eslint.org/)
+*   **Package Manager:** [pnpm](https://pnpm.io/)
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to set up the project locally for development and testing.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/en/) (v18.x or newer recommended)
+- [pnpm](https://pnpm.io/installation)
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/Homewin-Nigeria-Ltd/euphoria-by-sujimoto
+    cd euphoria-by-sujimoto
+    ```
+
+2.  **Install dependencies:**
+
+    Using `pnpm`, which is the package manager used for this project:
+
+    ```bash
+    pnpm install
+    ```
+
+3.  **Set up environment variables:**
+
+    Create a `.env.local` file in the root of the project by copying the example file:
+
+    ```bash
+    cp .env.example .env.local
+    ```
+
+    Then, fill in the required values in `.env.local`. See the Environment Variables section for more details.
+
+4.  **Run the development server:**
+
+    ```bash
+    pnpm dev
+    ```
+
+    Open http://localhost:3000 in your browser to see the result.
+
+## 📦 Build & Deployment
+
+To create a production-ready build of the application, run the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will generate an optimized build in the `.next` directory. You can then start the production server with:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧹 Linting & Formatting
 
-## Learn More
+This project uses ESLint for code quality and consistency. To run the linter, use:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To automatically fix linting issues:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm lint:fix
+```
