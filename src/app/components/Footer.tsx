@@ -12,32 +12,33 @@ import facebook from "../../../public/images/socials/facebook.svg";
 import tiktok from "../../../public/images/socials/tiktok.svg";
 import whatsapp from "../../../public/images/socials/whatsapp.svg";
 import x from "../../../public/images/socials/x.svg";
+import instagram from "../../../public/images/socials/instagram.svg";
 
 const Footer = () => {
   const socials = [
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/euphoriarestaurantlagos?igsh=aWMyYzZkOXoxZmNz",
+      logo: instagram,
+    },
     // {
-    //   name: "Instagram",
+    //   name: "x(Twitter)",
     //   link: "#",
-    //   logo: instagram,
+    //   logo: x,
+    // },
+    // {
+    //   name: "Facebook",
+    //   link: "#",
+    //   logo: facebook,
     // },
     {
-      name: "x(Twitter)",
-      link: "#",
-      logo: x,
-    },
-    {
-      name: "Facebook",
-      link: "#",
-      logo: facebook,
-    },
-    {
       name: "TikTok",
-      link: "#",
+      link: "https://www.tiktok.com/@euphoria_bysujimoto?_t=ZS-90vHtgfWiqu&_r=1",
       logo: tiktok,
     },
     {
       name: "Whatsapp",
-      link: "#",
+      link: "https://wa.me/2348115780020",
       logo: whatsapp,
     },
   ];
@@ -85,7 +86,8 @@ const Footer = () => {
           <div className="flex space-x-2 items-center justify-center">
             <Image src={phoneIcon} alt="phone icon" />
             <p className="font-bruno-ace text-white text-[16px] leading-[19.3px] uppercase text-center">
-              Contact 08039999987 for Reservations
+              Contact <a href="tel:+2348115780020">08115780020</a> for
+              Reservations
             </p>
           </div>
         </div>
@@ -111,6 +113,7 @@ const Footer = () => {
               <a
                 key={index}
                 href={social.link}
+                target="_blank"
                 className="font-bruno-ace text-white text-[16px] md:text-[20px] leading-[38px] md:leading-[60px] md:tracking-[14.24px] uppercase flex justify-center items-center border border-white px-5"
               >
                 {social.name}
