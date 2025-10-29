@@ -8,10 +8,8 @@ import logo from "../../../public/images/footer-logo.svg";
 import sujimotoLogo from "../../../public/images/sujimoto-logo.svg";
 import StackCarousel from "./StackCarousel";
 
-import facebook from "../../../public/images/socials/facebook.svg";
 import tiktok from "../../../public/images/socials/tiktok.svg";
 import whatsapp from "../../../public/images/socials/whatsapp.svg";
-import x from "../../../public/images/socials/x.svg";
 import instagram from "../../../public/images/socials/instagram.svg";
 
 const Footer = () => {
