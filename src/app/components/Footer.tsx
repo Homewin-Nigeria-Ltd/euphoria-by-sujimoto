@@ -1,16 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import phoneIcon from "../../../public/icons/phone-icon.svg";
-import drinksQrCode from "../../../public/images/drinks-qr-code.svg";
-import foodQrCode from "../../../public/images/food-qr-code.svg";
 import footerBg from "../../../public/images/footer-grainy-bg.webp";
-import logo from "../../../public/images/footer-logo.svg";
 import sujimotoLogo from "../../../public/images/sujimoto-logo.svg";
 import StackCarousel from "./StackCarousel";
 
+import instagram from "../../../public/images/socials/instagram.svg";
 import tiktok from "../../../public/images/socials/tiktok.svg";
 import whatsapp from "../../../public/images/socials/whatsapp.svg";
-import instagram from "../../../public/images/socials/instagram.svg";
 
 const Footer = () => {
   const socials = [
