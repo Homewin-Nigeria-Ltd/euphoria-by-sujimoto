@@ -30,7 +30,7 @@ export default function Home() {
         <LocationSection />
         <LayeredGallery />
         <OurMenu />
-        <BookReservationForm />
+        {/* <BookReservationForm /> */}
         <AboutEuphoriaSection />
         <FloatingWhatsapp />
         <Footer />

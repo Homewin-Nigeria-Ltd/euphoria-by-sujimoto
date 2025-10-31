@@ -15,11 +15,11 @@ import Image from "next/image";
 
 const OtherBusinessesSwiper = () => {
   const otherBusinesses = [
-    {
-      title: "Silencio",
-      icon: silencio,
-      link: "https://www.silenciong.com/",
-    },
+    // {
+    //   title: "Silencio",
+    //   icon: silencio,
+    //   link: "https://www.silenciong.com/",
+    // },
     {
       title: "Sujimoto Residences",
       icon: sujimotoResidences,
@@ -28,13 +28,13 @@ const OtherBusinessesSwiper = () => {
     {
       title: "Motobills",
       icon: motobills,
-      link: "https://motobills.com/",
+      link: "https://www.motobills.com/",
     },
-    {
-      title: "Motobills",
-      icon: motobills,
-      link: "https://motobills.com/",
-    },
+    // {
+    //   title: "Motobills",
+    //   icon: motobills,
+    //   link: "https://motobills.com/",
+    // },
   ];
 
   return (

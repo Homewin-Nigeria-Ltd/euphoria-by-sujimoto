@@ -49,11 +49,11 @@ const Footer = () => {
       />
       <div className="w-full h-full px-5 md:px-20 py-5 md:py-10 flex flex-col relative z-10 justify-end space-y-5 md:space-y-10">
         {/* stack gallery */}
-        <div className="-mt-20 md:-mt-20 relative w-full">
+        <div className="-mt-20 md:-mt-20 mb-20 relative w-full">
           <StackCarousel />
         </div>
         {/* logo & food and drinks qr code */}
-        <div className="flex flex-col lg:flex-row justify-between items-center">
+        {/* <div className="flex flex-col lg:flex-row justify-between items-center">
           <Image
             src={logo}
             alt="logo"
@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* booking contact */}
         <div className="w-full flex justify-center items-center">
           <div className="flex space-x-2 items-center justify-center">
@@ -97,12 +97,18 @@ const Footer = () => {
             </p>
             <div className="w-full flex justify-center items-center space-x-5 md:hidden">
               {socials.map((social, index) => (
-                <div
-                  className="flex justify-center items-center p-5 bg-white rounded-full"
+                <a
+                  href={social.link}
+                  className="flex justify-center items-center p-3 bg-white rounded-full"
                   key={index}
                 >
-                  <Image src={social.logo} alt={social.name} />
-                </div>
+                  <Image
+                    src={social.logo}
+                    alt={social.name}
+                    width={20}
+                    height={20}
+                  />
+                </a>
               ))}
             </div>
           </div>

@@ -1,10 +1,5 @@
 # Euphoria by Sujimoto
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/your-repo/ci.yml?branch=main&style=flat-square)](https://github.com/your-username/your-repo/actions)
-[![License](https://img.shields.io/github/license/your-username/your-repo?style=flat-square)](./LICENSE)
-
-> A stunning web experience for the "Euphoria" project by Sujimoto.
-
 This repository contains the source code for the official website of Euphoria by Sujimoto, a premier luxury real estate project. Built with modern web technologies, it offers a seamless, performant, and visually rich user experience.
 
 ## Features

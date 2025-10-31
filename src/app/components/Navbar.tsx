@@ -20,11 +20,11 @@ const Navbar = () => {
       url: "/",
       clickable: true,
     },
-    {
-      name: "Book A Reservation",
-      url: "/book-a-reservation",
-      clickable: false,
-    },
+    // {
+    //   name: "Book A Reservation",
+    //   url: "/book-a-reservation",
+    //   clickable: false,
+    // },
   ];
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -56,12 +56,12 @@ const Navbar = () => {
         <Link href="/" className="flex justify-center items-center">
           <Image src={logo} alt="logo" className="animate-fade-in" />
         </Link>
-        <Link
+        {/* <Link
           href="/gallery"
           className="hidden md:flex justify-end items-center font-cormorant-unicase text-white text-[16px] leading-normal capitalize text-center pointer-events-none"
         >
           Gallery
-        </Link>
+        </Link> */}
 
         <div
           className={`md:hidden flex justify-center items-center p-3 animate-fade-in ${

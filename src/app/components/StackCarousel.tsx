@@ -77,7 +77,7 @@ const StackCarousel = () => {
     if (Math.abs(dragOffset) > DRAG_THRESHOLD) {
       const direction = dragOffset > 0 ? -1 : 1;
       setCurrentIndex(
-        (prev) => (prev + direction + slides.length) % slides.length,
+        (prev) => (prev + direction + slides.length) % slides.length
       );
       setTimeout(() => {
         setDragOffset(0);
@@ -200,7 +200,7 @@ const StackCarousel = () => {
           ))}
         </div>
 
-        <div className="w-full h-[220px] justify-between items-center absolute inset-0 px-[15rem] hidden md:flex">
+        <div className="w-full h-[220px] justify-between items-center absolute inset-0 px-[15rem] hidden md:flex mb-10">
           <button
             onClick={handlePrev}
             className={`stack-carousel-prev -translate-x-1/2 focus:outline-none`}
@@ -215,9 +215,9 @@ const StackCarousel = () => {
           </button>
         </div>
 
-        <button className="font-cormorant-unicase font-bold text-white text-[14px] md:text-[16px] leading-normal text-center uppercase px-10 py-3 md:py-4 bg-custom-gradient z-10">
+        {/* <button className="font-cormorant-unicase font-bold text-white text-[14px] md:text-[16px] leading-normal text-center uppercase px-10 py-3 md:py-4 bg-custom-gradient z-10">
           Add your Experience
-        </button>
+        </button> */}
       </div>
     </div>
   );
