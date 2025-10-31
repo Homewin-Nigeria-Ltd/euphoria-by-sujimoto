@@ -1,7 +1,7 @@
 "use client";
 
 import AboutEuphoriaSection from "./components/AboutEuphoriaSection";
-import BookReservationForm from "./components/BookReservationForm";
+// import BookReservationForm from "./components/BookReservationForm";
 import FloatingWhatsapp from "./components/FloatingWhatsapp";
 import Footer from "./components/Footer";
 import HeaderBg from "./components/HeaderBg";
