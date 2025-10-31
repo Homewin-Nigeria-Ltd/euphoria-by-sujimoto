@@ -145,9 +145,14 @@ const AboutEuphoriaSection = () => {
               </div>
               <div className="mt-5">
                 <button className="bg-about-euphoria-learn-more-gradient px-8 py-4 flex space-x-2 items-center relative md:mt-10 focus:outline-none">
-                  <p className="font-bruno-ace font-medium text-white text-[13.362px] leading-normal">
+                  <a
+                    href="https://sujimotonig.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bruno-ace font-medium text-white text-[13.362px] leading-normal"
+                  >
                     Learn More
-                  </p>
+                  </a>
                   <Image src={arrowRight} alt="arrow right" />
                 </button>
               </div>
