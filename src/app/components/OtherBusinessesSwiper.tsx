@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import motobills from "../../../public/images/motobills.svg";
-import silencio from "../../../public/images/silencio.svg";
 import sujimotoResidences from "../../../public/images/sujimoto-residences.svg";
 
 import Image from "next/image";
