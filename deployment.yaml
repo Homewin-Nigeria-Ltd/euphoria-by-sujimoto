@@ -85,7 +85,7 @@ metadata:
   name: kubecert-euphoria
   namespace: staging-motopay-ns
 spec:
-  secretName: euphoria
+  secretName: euphoriaa
   issuerRef:
     name: kubeissuer-euphoria
     kind: ClusterIssuer
@@ -103,14 +103,12 @@ metadata:
  namespace: staging-motopay-ns
  annotations:
    kubernetes.io/ingress.class: nginx
-
 spec:
  ingressClassName: nginx
  tls:
  - hosts:
    - www.euphoriang.com
-   #secretName: mp-staging-tls
-   secretName: euphoria
+   secretName: euphoriaa
  rules:
  - host: www.euphoriang.com
    http:
