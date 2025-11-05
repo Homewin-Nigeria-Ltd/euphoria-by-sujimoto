@@ -91,9 +91,9 @@ spec:
     kind: ClusterIssuer
   duration: 2160h # 90d
   renewBefore: 360h # 15d
-  commonName: www.euphoria.com
+  commonName: www.euphoriang.com
   dnsNames:
-  - www.euphoria.com
+  - www.euphoriang.com
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -111,11 +111,11 @@ spec:
  ingressClassName: nginx
  tls:
  - hosts:
-   - www.euphoria.com
+   - www.euphoriang.com
    #secretName: mp-staging-tls
    secretName: euphoria
  rules:
- - host: www.euphoria.com
+ - host: www.euphoriang.com
    http:
      paths:
      - pathType: Prefix
