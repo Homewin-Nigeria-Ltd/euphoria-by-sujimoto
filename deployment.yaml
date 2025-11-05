@@ -91,9 +91,9 @@ spec:
     kind: ClusterIssuer
   duration: 2160h # 90d
   renewBefore: 360h # 15d
-  commonName: euphoria.staging-api.motopayng.com
+  commonName: www.euphoria.com
   dnsNames:
-  - euphoria.staging-api.motopayng.com
+  - www.euphoria.com
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -111,11 +111,11 @@ spec:
  ingressClassName: nginx
  tls:
  - hosts:
-   - euphoria.staging-api.motopayng.com
+   - www.euphoria.com
    #secretName: mp-staging-tls
    secretName: euphoria
  rules:
- - host: euphoria.staging-api.motopayng.com
+ - host: www.euphoria.com
    http:
      paths:
      - pathType: Prefix
