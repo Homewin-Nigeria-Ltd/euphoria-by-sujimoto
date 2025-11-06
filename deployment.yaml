@@ -101,6 +101,7 @@ metadata:
   namespace: staging-motopay-ns
   annotations:
     kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: kubeissuer-euphoria
 spec:
   ingressClassName: nginx
   tls:
